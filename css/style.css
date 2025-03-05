@@ -8,9 +8,12 @@ body {
 	padding-left: 12px;
 }
 
+p{
+    font-size: x-large;
+}
 
 .navbar{
-    background-color: #28a745 !important; /* เขียวสด */
+    background-color: #bceeca !important; /* เขียวสด */
 	color: black
 }
 
@@ -84,6 +87,7 @@ body {
 
 .card-img-top{
 	height: 500px;
+        object-fit: contain;
 }
 
 .map{
