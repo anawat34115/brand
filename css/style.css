@@ -101,7 +101,16 @@ ul{
     font-size: 20px;
 }
 
-
+ul {
+    list-style-type: disc; /* ใช้ bullet แบบปกติ */
+    padding-left: 20px; /* เว้นระยะซ้าย */
+  }
+  
+  ul li {
+    font-size: 1.1rem; /* ปรับขนาดตัวอักษร */
+    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    margin-bottom: 3px; /* เพิ่มช่องว่างแต่ละบรรทัด */
+  }
 .navMenu h2 {
     font-size: 25px;
   }
