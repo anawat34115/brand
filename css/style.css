@@ -77,7 +77,13 @@ ul{
     margin: 0 10px; /* ป้องกันชิดขอบเกินไป */
 }
 .carousel-caption{
-	top: 40%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* ปรับขนาดความกว้าง */
+    background: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งใส */
+    padding: 10px 20px;
+    border-radius: 10px; /* มุมโค้งมน */
 }
 
 .img-slider {
