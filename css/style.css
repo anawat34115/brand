@@ -9,8 +9,13 @@ body {
 }
 
 p{
-    font-size: x-large;
-}
+    font-size: large;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+    
+    
 
 .navbar{
     background-color: #bceeca !important; /* เขียวสด */
@@ -67,7 +72,9 @@ p{
 }
 
 ul{
-    font-size: x-large;
+    font-size: large;
+    display: inline-block;
+    margin: 0 10px; /* ป้องกันชิดขอบเกินไป */
 }
 .carousel-caption{
 	top: 40%;
@@ -85,7 +92,19 @@ ul{
 .navMenu{
 	padding-top: 75px;
 	padding-bottom: 20px;
+    font-size: 20px;
 }
+
+.navMenu h2 {
+    font-size: 25px;
+  }
+  
+  @media (max-width: 768px) { 
+    .navMenu h2 {
+      font-size: 22px; /* ขนาดเล็กลงเมื่อจอแคบ */
+    }
+  }
+  
 
 .card-img-top{
 	height: 300px;
@@ -122,6 +141,10 @@ ul{
  
  .only-mobile{
   visibility:visible;
+  }
+  p{
+    display: inline-block;
+    margin: 0 10px; /* ป้องกันชิดขอบเกินไป */
   }
 }
 
@@ -197,6 +220,10 @@ footer{
         height: auto; /* รักษาสัดส่วนของภาพ */
         margin: 0 auto; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลางในแนวนอน */
         display: block; /* ทำให้แนวการจัดตำแหน่งในแนวนอนทำงาน */
+    }
+    p{
+        display: inline-block;
+        margin: 0 10px; /* ป้องกันชิดขอบเกินไป */
     }
 }
 
