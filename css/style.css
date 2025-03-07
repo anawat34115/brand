@@ -217,6 +217,12 @@ footer{
     color: #28a745;
     margin-bottom: 10px;
 }
+/* General Styles */
+.main-info {
+    margin: 20px auto; /* Center the box */
+    display: inline-grid;
+
+}
 
 /* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
 @media (max-width: 767px) {
