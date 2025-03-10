@@ -236,12 +236,7 @@ h1 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
+
 
 .phone-number {
     background-color: #007bff;
