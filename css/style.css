@@ -196,6 +196,15 @@ footer{
     color: #666;
 }
 
+h1 {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+}
+
 .row.mt-4 {
     display: flex;
     justify-content: center;
@@ -216,6 +225,38 @@ footer{
     font-size: 40px;
     color: #28a745;
     margin-bottom: 10px;
+}
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.phone-number {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.phone-number:hover {
+    background-color: #0056b3;
 }
 
 /* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
