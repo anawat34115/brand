@@ -255,13 +255,16 @@ h1 {
 
 .line-contact{
     background: linear-gradient(135deg, #44f85c, #2ecc71); /* Gradient สีเขียว */
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 30px;
     color: black;
     margin-bottom: 10px;
+}
+a{
+    font-size: 30px;
 }
 
 /* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
