@@ -103,44 +103,43 @@ ul{
 
 ul {
     list-style-type: disc; /* ใช้ bullet แบบปกติ */
-    padding-left: 20px; /* เว้นระยะซ้าย */
-  }
-  
-  ul li {
+    padding-left: 30px; /* เพิ่มระยะห่างซ้าย */
+    margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่าง */
+}
+
+ul li {
     font-size: 1.1rem; /* ปรับขนาดตัวอักษร */
     line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
-    margin-bottom: 3px; /* เพิ่มช่องว่างแต่ละบรรทัด */
-  }
+    margin-bottom: 10px; /* เพิ่มช่องว่างแต่ละบรรทัด */
+}
 .navMenu h2 {
     font-size: 25px;
   }
   
-  @media (max-width: 768px) { 
-    .navMenu h2 {
-      font-size: 22px; /* ขนาดเล็กลงเมื่อจอแคบ */
-    }
-  }
-  
 
-.card-img-top{
-	height: 300px;
-        object-fit: contain;
+
+  .card-img-top, .card-img-top1 {
+    height: 250px; /* ปรับความสูงของรูปภาพ */
+    object-fit: cover; /* ปรับรูปภาพให้ครอบคลุมพื้นที่โดยไม่เสียสัดส่วน */
+    border-radius: 10px; /* ทำให้มุมโค้งมน */
+    margin-bottom: 15px; /* เพิ่มช่องว่างด้านล่าง */
 }
 
-
-.card-img-top1{
-	height: 300px;
-        object-fit: contain;
-}
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังสีดำโปร่งแสง */
+    background-color: rgba(0, 0, 0, 0.7); /* เพิ่มความเข้มของพื้นหลังสีดำโปร่งแสง */
     color: white; /* เปลี่ยนสีข้อความให้ขาว */
-    padding: 10px; /* เพิ่มระยะห่างรอบๆ ข้อความ */
-    border-radius: 5px; /* ทำให้มุมโค้ง */
+    padding: 20px; /* เพิ่มระยะห่างรอบๆ ข้อความ */
+    border-radius: 10px; /* ทำให้มุมโค้ง */
+    bottom: 20%; /* ปรับตำแหน่งให้อยู่ด้านล่าง */
 }
 
-.carousel-caption h2, .carousel-caption p {
-    text-align: center; /* จัดข้อความให้กึ่งกลาง */
+.carousel-caption h2 {
+    font-size: 2rem; /* ปรับขนาดตัวอักษร */
+    margin-bottom: 10px; /* เพิ่มช่องว่างด้านล่าง */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* ปรับขนาดตัวอักษร */
 }
 
 .map{
@@ -254,28 +253,48 @@ h1 {
     background-color: #ffffff;
 }
 
+
+
 /* สำหรับหน้าจอขนาดเล็ก (มือถือ) */
 @media (max-width: 767px) {
-    .card-img-top {
-        width: 60%; /* ปรับขนาดภาพเป็น 80% ของพื้นที่ */
+    .card-img-top, .card-img-top1 {
+        width: 80%; /* ปรับขนาดภาพเป็น 80% ของพื้นที่ */
         height: auto; /* รักษาสัดส่วนของภาพ */
         margin: 0 auto; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลางในแนวนอน */
         display: block; /* ทำให้แนวการจัดตำแหน่งในแนวนอนทำงาน */
     }
 
-    .card{
-        margin-top: 20px;
+    .carousel-caption {
+        bottom: 10%; /* ปรับตำแหน่งให้อยู่ด้านล่าง */
     }
 
-    .card-img-top1{
-        width: 40%; /* ปรับขนาดภาพเป็น 80% ของพื้นที่ */
-        height: auto; /* รักษาสัดส่วนของภาพ */
-        margin: 0 auto; /* จัดตำแหน่งรูปภาพให้อยู่ตรงกลางในแนวนอน */
-        display: block; /* ทำให้แนวการจัดตำแหน่งในแนวนอนทำงาน */
+    .carousel-caption h2 {
+        font-size: 1.5rem; /* ปรับขนาดตัวอักษร */
     }
-    p{
-        display: inline-block;
-        margin: 0 10px; /* ป้องกันชิดขอบเกินไป */
+
+    .carousel-caption p {
+        font-size: 1rem; /* ปรับขนาดตัวอักษร */
     }
 }
 
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
